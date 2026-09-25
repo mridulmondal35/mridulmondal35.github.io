@@ -133,6 +133,27 @@
   transform: scale(1.1);
 }
 
+/*======================================
+//--//-->    HERO IMAGE FIX (up.jpeg)
+  Forces the hero background photo to always fill its
+  box proportionally and stay centered, regardless of
+  the original photo's width/height or aspect ratio.
+======================================*/
+
+.home-slider .slider-item .one-third.img {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-height: 320px;
+}
+
+@media (max-width: 767.98px) {
+  .home-slider .slider-item .one-third.img {
+    min-height: 260px;
+    background-position: center top !important;
+  }
+}
+
 </style>
 
   </head>
